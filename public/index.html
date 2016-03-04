@@ -7,37 +7,276 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
 </head>
 
-<body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
-    </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
+<body id="top">
+
+	<div class="background">
+		<img src="./data/pics/wood_texture3.jpg"/>
 	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
+
+	<div data-sticky-container>
+		<div class="title-bar" data-sticky data-options="marginTop:0;" data-top-anchor="1" data-bottom-anchor="contact:bottom" id="navbar">
+			<div class="title-bar-left">
+				<span class="title-bar-title">
+					<span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <span class="menu-icon" data-toggle></span>
+          </span>
+					<a name="top" class="scroll" href="#top">Michael Wojciak</a>
+				</span>
+			</div>
+			<div id="responsive-menu">
+				<div class="title-bar-right">
+					<ul class="menu">
+						<li><a name="about" class="scroll" href="#about">About</a></li>
+						<li><a name="photos" class="scroll"  href="#photos">Photos</a></li>
+						<li><a name="contact" class="scroll"  href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<div class="carousel">
+			<div><img src="./data/pics/lake1.jpg" alt="Lake"/></div>
+			<div><img src="./data/pics/landscape1.jpg" alt="Landscape"/></div>
+			<div><img src="./data/pics/lake2.jpg" alt="Lake"/></div>
+			<div><img src="./data/pics/landscape2.jpg" alt="Landscape"/></div>
+		</div>
+	</header>
+
+	<section class="expanded row" id="about" style="background: none;">
+		<div class="text-center">
+			<h3>About Me</h3>
+			<p style="width: 500px; margin: 0 auto; padding-bottom: 5%">My name is Michael Wojciak and I am a senior studying CS at UIUC. I have taken a lot of pictures of landscapes and flowers in various places when I am hiking. I have taken a few of my favorites to showcase on this website. Enjoy!</p>
+		</div>
+
   </section>
+
+	<!-- Modals -->
+	<div class="reveal" id="modal1" data-reveal>
+		<img src="./data/pics/flower1.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal2" data-reveal>
+		<img src="./data/pics/flower2.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal3" data-reveal>
+		<img src="./data/pics/flower3.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal4" data-reveal>
+		<img src="./data/pics/flower4.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal5" data-reveal>
+		<img src="./data/pics/flower5.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal6" data-reveal>
+		<img src="./data/pics/flower6.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal7" data-reveal>
+		<img src="./data/pics/flower7.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal8" data-reveal>
+		<img src="./data/pics/flower8.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal9" data-reveal>
+		<img src="./data/pics/flower9.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal10" data-reveal>
+		<img src="./data/pics/mushroom.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal11" data-reveal>
+		<img src="./data/pics/pine_cones1.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal12" data-reveal>
+		<img src="./data/pics/pine_cones2.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal13" data-reveal>
+		<img src="./data/pics/small_landscape1.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal14" data-reveal>
+		<img src="./data/pics/small_landscape2.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal15" data-reveal>
+		<img src="./data/pics/small_landscape3.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal16" data-reveal>
+		<img src="./data/pics/small_landscape4.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal17" data-reveal>
+		<img src="./data/pics/small_landscape5.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal18" data-reveal>
+		<img src="./data/pics/small_landscape6.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal19" data-reveal>
+		<img src="./data/pics/small_landscape7.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal20" data-reveal>
+		<img src="./data/pics/small_landscape8.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal21" data-reveal>
+		<img src="./data/pics/small_landscape9.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal22" data-reveal>
+		<img src="./data/pics/small_landscape10.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal23" data-reveal>
+		<img src="./data/pics/small_landscape11.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+	<div class="reveal" id="modal24" data-reveal>
+		<img src="./data/pics/small_landscape12.jpg" alt="Flower"/>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+
+	<section class="expanded row" id="photos">
+		<div class="text-center"><h3>Photos</h3></div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal1"><img src="./data/pics/flower1.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal2"><img src="./data/pics/flower2.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal3"><img src="./data/pics/flower3.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal4"><img src="./data/pics/flower4.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal5"><img src="./data/pics/flower5.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal6"><img src="./data/pics/flower6.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal7"><img src="./data/pics/flower7.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal8"><img src="./data/pics/flower8.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal9"><img src="./data/pics/flower9.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal10"><img src="./data/pics/mushroom.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal11"><img src="./data/pics/pine_cones1.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal12"><img src="./data/pics/pine_cones2.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal13"><img src="./data/pics/small_landscape1.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal14"><img src="./data/pics/small_landscape2.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal15"><img src="./data/pics/small_landscape3.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal16"><img src="./data/pics/small_landscape4.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal17"><img src="./data/pics/small_landscape5.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal18"><img src="./data/pics/small_landscape6.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal19"><img src="./data/pics/small_landscape7.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal20"><img src="./data/pics/small_landscape8.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal21"><img src="./data/pics/small_landscape9.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="large-4 columns"><a data-open="modal22"><img src="./data/pics/small_landscape10.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal23"><img src="./data/pics/small_landscape11.jpg" alt="Flower"/></a></div>
+			<div class="large-4 columns"><a data-open="modal24"><img src="./data/pics/small_landscape12.jpg" alt="Flower"/></a></div>
+		</div>
+		<div class="row">
+			<div class="text-center">
+				<video autoplay loop>
+					<source src="./data/video/forest.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+	</section>
+
+	<section class="expanded row" id="contact" style="background: none;">
+		<div class="text-center">
+			<h3>Contact Me</h3>
+			<div class="row">
+				<div class="large-4 columns"><i class="fa fa-facebook fa-5x"></i></div>
+				<div class="large-4 columns"><i class="fa fa-twitter fa-5x"></i></div>
+				<div class="large-4 columns"><i class="fa fa-linkedin fa-5x"></i></div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="content">
+			<i class="fa fa-copyright"></i>
+			2016 Michael Wojciak
+		</div>
+	</footer>
 
   <!-- Scripts -->
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
+	<script type="text/javascript" src="./lib/slick-carousel/slick/slick.min.js"></script>
   <script src="./js/script.js"></script>
   <script>
     $(document).foundation();
